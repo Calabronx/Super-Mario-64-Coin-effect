@@ -5,7 +5,7 @@ using UnityEngine;
 public class FlipCoin : MonoBehaviour
 {
     [SerializeField] GameObject coin;
-    [SerializeField] float xAngle, yAngle, zAngle;
+    private float xAngle, yAngle = 180, zAngle;
     private const float MAX_UP_LIMIT = 0.650f;
     private const float MAX_DOWN_LIMIT = 0.600f;
     private bool maxLimit = false;
